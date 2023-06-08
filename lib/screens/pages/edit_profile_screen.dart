@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:realestate/screens/constants/mycolors.dart';
 
 import 'contact_screen.dart';
 
@@ -14,6 +15,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: whiteColor,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -88,164 +90,300 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  height:71  ,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 15.0,left: 15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        const Text('First name',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
-                        TextFormField(
-                          textInputAction: TextInputAction.next,
-                          cursorColor: Colors.black,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.done,
-                              color: Color(0xffb2b2b2),
-                            ),
-                            contentPadding: const EdgeInsets.all(5),
-                          ),
+                SizedBox(
+                  height: 50,
+                  child: TextFormField(
+                      enableSuggestions: false,
+                      autocorrect: false,
+                      cursorColor: Colors.grey,
+                      cursorHeight: 20,
+                      textInputAction: TextInputAction.next,
+                      decoration:  const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(color: Colors.grey),
                         ),
-                      ],
-                    ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(
+                              color: Colors.grey),
+                        ),
+                        label: Text("First name",style: TextStyle(color: primaryColor),),
+                        suffixIcon: Icon(Icons.done,color: Colors.grey,),
+                      )
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
-                Container(
-                  height:71 ,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 15.0,left: 15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        Text('Last name',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
-                        TextFormField(
-                          textInputAction: TextInputAction.next,
-                          cursorColor: Colors.black,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.done,
-                              color: Color(0xffb2b2b2),
-                            ),
-                            contentPadding: const EdgeInsets.all(5),
-                          ),
+                SizedBox(
+                  height: 50,
+                  child: TextFormField(
+                      enableSuggestions: false,
+                      autocorrect: false,
+                      cursorColor: Colors.grey,
+                      cursorHeight: 20,
+                      textInputAction: TextInputAction.next,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(color: Colors.grey),
+
                         ),
-                      ],
-                    ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(
+                              color: Colors.grey),
+                        ),
+                        label: Text("Last name",style: TextStyle(color: primaryColor),),
+                        suffixIcon: Icon(Icons.done,color: Colors.grey,),
+                      )
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
-                Container(
-                  height:71 ,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 15.0,left: 15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        const Text('Location',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
-                        TextFormField(
-                          textInputAction: TextInputAction.next,
-                          cursorColor: Colors.black,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.done,
-                              color: Color(0xffb2b2b2),
-                            ),
-                            contentPadding: const EdgeInsets.all(5),
-                          ),
+                SizedBox(
+                  height: 50,
+                  child: TextFormField(
+                      enableSuggestions: false,
+                      autocorrect: false,
+                      cursorColor: Colors.grey,
+                      cursorHeight: 20,
+                      textInputAction: TextInputAction.next,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(color: Colors.grey),
+
                         ),
-                      ],
-                    ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(
+                              color: Colors.grey),
+                        ),
+                        label: Text("Location",style: TextStyle(color: primaryColor),),
+                        suffixIcon: Icon(Icons.done,color: Colors.grey,),
+                      )
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
-                Container(
-                  height:71 ,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 15.0,left: 15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        const Text('Phone',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
-                        TextFormField(
-                          textInputAction: TextInputAction.next,
-                          cursorColor: Colors.black,
-                          keyboardType: TextInputType.number,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.done,
-                              color: Color(0xffb2b2b2),
-                            ),
-                            contentPadding: const EdgeInsets.all(5),
-                          ),
+                SizedBox(
+                  height: 50,
+                  child: TextFormField(
+                      enableSuggestions: false,
+                      autocorrect: false,
+                      cursorColor: Colors.grey,
+                      cursorHeight: 20,
+                      keyboardType: TextInputType.number,
+                      textInputAction: TextInputAction.next,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(color: Colors.grey),
+
                         ),
-                      ],
-                    ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(
+                              color: Colors.grey),
+                        ),
+                        label: Text("Phone",style: TextStyle(color: primaryColor),),
+                        suffixIcon: Icon(Icons.done,color: Colors.grey,),
+                      )
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
-                Container(
-                  height:71 ,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 15.0,left: 15.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        Text('Mail',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
-                        TextFormField(
-                          textInputAction: TextInputAction.done,
-                          cursorColor: Colors.black,
-                          decoration: const InputDecoration(
-                            border: InputBorder.none,
-                            suffixIcon: Icon(
-                              Icons.done,
-                              color: Color(0xffb2b2b2),
-                            ),
-                            contentPadding: const EdgeInsets.all(5),
-                          ),
+                SizedBox(
+                  height: 50,
+                  child: TextFormField(
+                      enableSuggestions: false,
+                      autocorrect: false,
+                      cursorColor: Colors.grey,
+                      cursorHeight: 20,
+                      textInputAction: TextInputAction.done,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(color: Colors.grey),
                         ),
-                      ],
-                    ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide(
+                              color: Colors.grey),
+                        ),
+                        label: Text("Mail",style: TextStyle(color: primaryColor),),
+                        suffixIcon: Icon(Icons.done,color: Colors.grey,),
+                      )
                   ),
                 ),
+
+                // Container(
+                //   height:63  ,
+                //   width: MediaQuery.of(context).size.width,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
+                //     borderRadius: const BorderRadius.all(Radius.circular(20)),
+                //   ),
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(right: 15.0,left: 15.0),
+                //     child: Column(
+                //       crossAxisAlignment: CrossAxisAlignment.start,
+                //       children:  [
+                //         const Text('First name',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w300, color: Color(0xffb2b2b2)),),
+                //         SizedBox(
+                //           height: 40,
+                //           child: TextFormField(
+                //             textInputAction: TextInputAction.next,
+                //             cursorColor: Colors.black,
+                //             cursorHeight: 20,
+                //             decoration: const InputDecoration(
+                //               border: InputBorder.none,
+                //               suffixIcon: Icon(
+                //                 Icons.done,size: 20,
+                //                 color: Color(0xffb2b2b2),
+                //               ),
+                //               contentPadding: const EdgeInsets.all(5),
+                //             ),
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 30,
+                // ),
+                // Container(
+                //   height:71 ,
+                //   width: MediaQuery.of(context).size.width,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
+                //     borderRadius: const BorderRadius.all(Radius.circular(20)),
+                //   ),
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(right: 15.0,left: 15.0),
+                //     child: Column(
+                //       crossAxisAlignment: CrossAxisAlignment.start,
+                //       children:  [
+                //         Text('Last name',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
+                //         TextFormField(
+                //           textInputAction: TextInputAction.next,
+                //           cursorColor: Colors.black,
+                //           decoration: const InputDecoration(
+                //             border: InputBorder.none,
+                //             suffixIcon: Icon(
+                //               Icons.done,
+                //               color: Color(0xffb2b2b2),
+                //             ),
+                //             contentPadding: const EdgeInsets.all(5),
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 30,
+                // ),
+                // Container(
+                //   height:71 ,
+                //   width: MediaQuery.of(context).size.width,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
+                //     borderRadius: const BorderRadius.all(Radius.circular(20)),
+                //   ),
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(right: 15.0,left: 15.0),
+                //     child: Column(
+                //       crossAxisAlignment: CrossAxisAlignment.start,
+                //       children:  [
+                //         const Text('Location',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
+                //         TextFormField(
+                //           textInputAction: TextInputAction.next,
+                //           cursorColor: Colors.black,
+                //           decoration: const InputDecoration(
+                //             border: InputBorder.none,
+                //             suffixIcon: Icon(
+                //               Icons.done,
+                //               color: Color(0xffb2b2b2),
+                //             ),
+                //             contentPadding: const EdgeInsets.all(5),
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 30,
+                // ),
+                // Container(
+                //   height:71 ,
+                //   width: MediaQuery.of(context).size.width,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
+                //     borderRadius: const BorderRadius.all(Radius.circular(20)),
+                //   ),
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(right: 15.0,left: 15.0),
+                //     child: Column(
+                //       crossAxisAlignment: CrossAxisAlignment.start,
+                //       children:  [
+                //         const Text('Phone',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
+                //         TextFormField(
+                //           textInputAction: TextInputAction.next,
+                //           cursorColor: Colors.black,
+                //           keyboardType: TextInputType.number,
+                //           decoration: const InputDecoration(
+                //             border: InputBorder.none,
+                //             suffixIcon: Icon(
+                //               Icons.done,
+                //               color: Color(0xffb2b2b2),
+                //             ),
+                //             contentPadding: const EdgeInsets.all(5),
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 30,
+                // ),
+                // Container(
+                //   height:71 ,
+                //   width: MediaQuery.of(context).size.width,
+                //   decoration: BoxDecoration(
+                //     border: Border.all(width: 1, color: const Color(0xffb2b2b2)),
+                //     borderRadius: const BorderRadius.all(Radius.circular(20)),
+                //   ),
+                //   child: Padding(
+                //     padding: const EdgeInsets.only(right: 15.0,left: 15.0),
+                //     child: Column(
+                //       crossAxisAlignment: CrossAxisAlignment.start,
+                //       children:  [
+                //         Text('Mail',style: TextStyle(fontSize: 13,fontWeight:FontWeight.w900, color: Color(0xffb2b2b2)),),
+                //         TextFormField(
+                //           textInputAction: TextInputAction.done,
+                //           cursorColor: Colors.black,
+                //           decoration: const InputDecoration(
+                //             border: InputBorder.none,
+                //             suffixIcon: Icon(
+                //               Icons.done,
+                //               color: Color(0xffb2b2b2),
+                //             ),
+                //             contentPadding: const EdgeInsets.all(5),
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),

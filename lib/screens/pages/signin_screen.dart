@@ -5,6 +5,8 @@ import 'package:realestate/screens/pages/signup_screen.dart';
 import 'package:realestate/screens/pages/splash_screen.dart';
 import 'package:realestate/screens/pages/welcome_screen.dart';
 
+import '../constants/mycolors.dart';
+
 class SigninScreen extends StatefulWidget {
   const SigninScreen({Key? key}) : super(key: key);
 
@@ -16,6 +18,7 @@ class _SigninScreenState extends State<SigninScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: whiteColor,
       body: SafeArea(
         child: Column(
           children: [

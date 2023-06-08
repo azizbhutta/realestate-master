@@ -7,6 +7,7 @@ class TermScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: whiteColor,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(

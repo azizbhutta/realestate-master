@@ -50,6 +50,7 @@ class _EmiScreenState extends State<EmiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: whiteColor,
         appBar: AppBar(
           backgroundColor: primaryColor,
           leading: IconButton(
