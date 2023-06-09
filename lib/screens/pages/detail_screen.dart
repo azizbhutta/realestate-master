@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:realestate/screens/constants/mycolors.dart';
+import 'package:realestate/screens/pages/review_screen.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({Key? key}) : super(key: key);
@@ -16,6 +18,8 @@ class _HomeScreenState extends State<DetailScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Stack(
                 clipBehavior: Clip.none,
@@ -305,9 +309,22 @@ class _HomeScreenState extends State<DetailScreen> {
                       color: Colors.grey.shade600),
                 ),
               ),
-
               const SizedBox(height: 20.0,),
-
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const ReviewScreen()));
+                },
+                child: Container(
+                  margin: const EdgeInsets.only(left: 20,bottom: 10),
+                  height: 40,
+                  width: 130,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: primaryColor,
+                  ),
+                  child: const Center(child: Text('Give a review',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: whiteColor),)),
+                ),
+              )
             ],
           ),
         ),

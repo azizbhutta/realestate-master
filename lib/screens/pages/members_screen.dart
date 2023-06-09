@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:realestate/screens/pages/edit_profile_screen.dart';
+import 'package:realestate/screens/pages/myprofile_screen.dart';
 
 import '../constants/mycolors.dart';
 
@@ -92,16 +94,21 @@ class MembersScreen extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.only(left: 5.0, top: 8.0),
                             child: ListTile(
-                              leading: Container(
-                                height: 50,
-                                width: 50,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(30.0),
-                                    border: Border.all(color: primaryColor),
-                                    image: const DecorationImage(
-                                        fit: BoxFit.fill,
-                                        image: NetworkImage(
-                                            "https://superstarsbio.com/wp-content/uploads/2018/11/Burak-Ozcivit.jpg"))),
+                              leading: GestureDetector(
+                                onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const MyProfileScreen()));
+                                },
+                                child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      border: Border.all(color: primaryColor),
+                                      image: const DecorationImage(
+                                          fit: BoxFit.fill,
+                                          image: NetworkImage(
+                                              "https://superstarsbio.com/wp-content/uploads/2018/11/Burak-Ozcivit.jpg"))),
+                                ),
                               ),
                               title: const Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,

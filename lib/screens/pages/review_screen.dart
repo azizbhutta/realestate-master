@@ -196,28 +196,28 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   },
                   child: const Text('All 150 reviews',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: primaryColor),),
                 ),
-                const Divider(
-                  thickness: 0.08,
-                  color: Colors.grey,
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Icon(CupertinoIcons.heart,size: 25,),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text('165',style: TextStyle(fontSize: 15,),),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Icon(Icons.textsms_outlined,size: 25,),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text('172',style: TextStyle(fontSize: 15,),),
-                  ],
-                ),
+                // const Divider(
+                //   thickness: 0.08,
+                //   color: Colors.grey,
+                // ),
+                // const Row(
+                //   mainAxisAlignment: MainAxisAlignment.start,
+                //   children: [
+                //     Icon(CupertinoIcons.heart,size: 25,),
+                //     SizedBox(
+                //       width: 5,
+                //     ),
+                //     Text('165',style: TextStyle(fontSize: 15,),),
+                //     SizedBox(
+                //       width: 30,
+                //     ),
+                //     Icon(Icons.textsms_outlined,size: 25,),
+                //     SizedBox(
+                //       width: 5,
+                //     ),
+                //     Text('172',style: TextStyle(fontSize: 15,),),
+                //   ],
+                // ),
               ],
             ),
           ),

@@ -15,7 +15,7 @@ class _WhishlistScreenState extends State<WhishlistScreen> {
     return Scaffold(
       backgroundColor: whiteColor,
       appBar: AppBar(
-        backgroundColor: primaryColor,
+        backgroundColor: Colors.transparent,
         leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -23,14 +23,13 @@ class _WhishlistScreenState extends State<WhishlistScreen> {
             icon: const Icon(
               Icons.arrow_back_ios,
               size: 20.0,
-              color: whiteColor,
+              color: primaryColor,
             )),
-        title: Text("WhishList",
-            style: GoogleFonts.arsenal(
-                color: whiteColor,
+        title: const Text("WhishList",
+            style: TextStyle(
+                color: primaryColor,
                 fontWeight: FontWeight.w700,
-                fontSize: 20,
-                letterSpacing: 1.6)),
+                fontSize: 22,)),
       ),
       body: SafeArea(
         child: ListView(

@@ -52,7 +52,7 @@ class _EmiScreenState extends State<EmiScreen> {
     return Scaffold(
         backgroundColor: whiteColor,
         appBar: AppBar(
-          backgroundColor: primaryColor,
+          backgroundColor: Colors.transparent,
           leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -60,14 +60,14 @@ class _EmiScreenState extends State<EmiScreen> {
               icon: const Icon(
                 Icons.arrow_back_ios,
                 size: 20.0,
-                color: whiteColor,
+                color: primaryColor,
               )),
-          title: Text("Emi Calculator",
-              style: GoogleFonts.arsenal(
-                  color: whiteColor,
+          title: const Text("Emi Calculator",
+              style: TextStyle(
+                  color: primaryColor,
                   fontWeight: FontWeight.w700,
                   fontSize: 20,
-                  letterSpacing: 1.6)),
+                  )),
         ),
         body: SingleChildScrollView(
           child: SafeArea(

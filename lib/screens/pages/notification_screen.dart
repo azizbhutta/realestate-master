@@ -20,9 +20,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
     return Scaffold(
       backgroundColor: whiteColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xff64d8d7),
+        backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        title: const Text('Notification',style: TextStyle(fontWeight: FontWeight.bold),textAlign: TextAlign.start,),
+        title: const Text('Notification',style: TextStyle(color: primaryColor,fontWeight: FontWeight.w700,
+          fontSize: 22,),textAlign: TextAlign.start,),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 10),

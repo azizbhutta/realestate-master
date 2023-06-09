@@ -170,7 +170,7 @@ class _SigninScreenState extends State<SigninScreen> {
               },
               style: ElevatedButton.styleFrom(
                   minimumSize: const Size(250, 50),
-                  backgroundColor: const Color(0xff240741)),
+                  backgroundColor: primaryColor),
               child: const Text('Sign in', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color: Colors.white),),
             ),
             const SizedBox(
@@ -190,7 +190,7 @@ class _SigninScreenState extends State<SigninScreen> {
                     style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xff232c64))),
+                        color: primaryColor)),
                 TextButton(
                   onPressed: () {
                     Navigator.push(

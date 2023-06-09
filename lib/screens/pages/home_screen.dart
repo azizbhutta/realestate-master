@@ -110,34 +110,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                    child: InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const ReviewScreen()));
-                      },
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(30.0),
-                                color: Colors.grey.shade100,
-                                border: Border.all(color: Colors.black87)),
-                            child: Image.asset(
-                              "assets/images/apartment.png",
-                              height: 30,
-                            ),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 50,
+                          width: 50,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30.0),
+                              color: Colors.grey.shade100,
+                              border: Border.all(color: Colors.black87)),
+                          child: Image.asset(
+                            "assets/images/apartment.png",
+                            height: 30,
                           ),
-                          const SizedBox(
-                            height: 4.0,
-                          ),
-                          Text(
-                            "Apartment",
-                            style: TextStyle(color: Colors.grey.shade700),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(
+                          height: 4.0,
+                        ),
+                        Text(
+                          "Apartment",
+                          style: TextStyle(color: Colors.grey.shade700),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(

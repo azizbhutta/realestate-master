@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:realestate/screens/constants/mycolors.dart';
 import 'signin_screen.dart';
 
 class InfoScreen extends StatefulWidget {
@@ -98,10 +99,10 @@ class _InfoScreenState extends State<InfoScreen> {
       width: 310,
       margin: const EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
-        color: selectedContainerIndex == index ? const Color(0xff232c64) : Colors.transparent,
+        color: selectedContainerIndex == index ? primaryColor : Colors.transparent,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: const Color(0xff232c64),
+          color: primaryColor,
           width: 2,
         ),
       ),

@@ -177,7 +177,7 @@ class _SignupScreenState extends State<SignupScreen> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                   minimumSize: const Size(250, 50),
-                  backgroundColor: const Color(0xff240741)),
+                  backgroundColor: primaryColor),
               child: const Text('Sign Up', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color: Colors.white),),
             ),
             const SizedBox(
@@ -194,7 +194,7 @@ class _SignupScreenState extends State<SignupScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text('Already have account?',
-                    style : TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Color(0xff232c64)) ),
+                    style : TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: primaryColor) ),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
